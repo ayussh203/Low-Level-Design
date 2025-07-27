@@ -37,6 +37,14 @@ How interfaces do it:
 Client classes depend only on the interface, not on concrete implementations.
 
 You can swap, extend or mock implementations without changing client code.
+Swap implementations
+You can choose at runtime whether you’re using PayPalProcessor, StripeProcessor, or any other real processor—just by passing a different object into CheckoutService. You don’t have to touch the CheckoutService class itself to switch from PayPal to Stripe.
+
+Extend implementations
+Later on you might add a completely new payment method, say CryptoProcessor, by writing a new class that implements PaymentProcessor. Again, you never edit CheckoutService; you only create your new CryptoProcessor and hand it in.
+
+Mock implementations
+For testing, you write a MockProcessor that also implements PaymentProcessor but fakes or records the work instead of calling a real API. Inject that into CheckoutService when running your unit tests—no production code needs to change.
 
 Any method that takes an interface type parameter is acting as a client:
 
