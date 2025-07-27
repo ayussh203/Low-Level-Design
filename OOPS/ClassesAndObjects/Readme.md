@@ -9,3 +9,4 @@ For example, a Human being is a class. The body parts of a human being are its p
 An object is a run-time entity. It is an instance of the class. An object can represent a person, place or any other item. An object can operate on both data members and member functions.
 
 To create an object, you use the new keyword followed by the class constructor. The new keyword is used to create an object, which allocates memory for it.
+
