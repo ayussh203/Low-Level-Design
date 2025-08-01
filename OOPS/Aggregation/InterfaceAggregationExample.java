@@ -109,9 +109,6 @@ COMPREHENSIVE EXPLANATION OF CODE CONCEPTS AND COMPILE-TIME VS RUNTIME DIFFERENC
 
    The internal professors list looks like:
 
-graphql
-Copy
-Edit
 professors --> [ Professor@1a2b3c (Dr. Adams, Physics), Professor@4d5e6f (Dr. Lee, Chemistry) ]
              ^-- references of type Teachable, actual objects are Professor
 
