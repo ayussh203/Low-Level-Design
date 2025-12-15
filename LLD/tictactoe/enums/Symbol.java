@@ -1,3 +1,5 @@
+package LLD.tictactoe.enums;
+
 public enum Symbol {
     X('X'),
     O('O'),
